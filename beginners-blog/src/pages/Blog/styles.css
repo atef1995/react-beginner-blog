@@ -1,3 +1,26 @@
+body {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(80, 233, 255, 1) 100%
+  );
+}
+
+.cover-img {
+  padding: 7cqb;
+  overflow: hidden;
+}
+
+.article-img {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.article-img:hover {
+  transform: scale(1.2);
+}
+
 .blog-wrap {
   max-width: 700px;
   margin: 0 auto;

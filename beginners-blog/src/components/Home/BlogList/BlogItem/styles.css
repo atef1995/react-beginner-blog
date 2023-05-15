@@ -25,7 +25,7 @@
 
 .blogItem-desc::before {
   position: absolute;
-  content: '...';
+  content: "...";
   bottom: 0;
   right: 0;
 }
@@ -40,6 +40,11 @@
 .blogItem-link {
   text-decoration: none;
   color: inherit;
+  transition: transform 0.3s ease-out;
+}
+
+.blogItem-link:hover {
+  transform: translateY(-10px);
 }
 
 .blogItem-author {
