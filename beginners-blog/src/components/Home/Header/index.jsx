@@ -1,15 +1,17 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 const Header = () => (
-  <header className='home-header'>
-    <h2>Inc. This Morning</h2>
+  <header className="home-header">
+    <h2>The Testing Corner</h2>
     <h1>
       <span>“</span> Blog <span>”</span>
     </h1>
     <p>
-      awesome place to make oneself <br /> productive and entertained through
-      daily updates.
+      <i>
+        Quality is never an accident;
+        <br /> it is always the result of intelligent effort.
+      </i>
     </p>
   </header>
 );
