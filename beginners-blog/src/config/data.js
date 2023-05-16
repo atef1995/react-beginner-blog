@@ -17,7 +17,7 @@ export const blogList = [
     cover: '/assets/images/da5c86cc41d75ec9.jpeg',
     images: [
       {
-        src: '/assets/images/pexels-pixabay-268533.jpg',
+        src: '/assets/images/Capture.png',
         description: 'this is what happened',
         caption: 'yes it is'
       },
