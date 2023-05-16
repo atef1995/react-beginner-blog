@@ -5,6 +5,7 @@ import Chip from "../../components/common/Chip";
 import EmptyList from "../../components/common/EmptyList";
 import "./styles.css";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Home/Footer";
 
 const Blog = () => {
   const { id } = useParams();
@@ -55,6 +56,9 @@ const Blog = () => {
               ))}
             </div>
           )}
+          <div className="footer">
+            <Footer />
+          </div>
         </div>
       ) : (
         <EmptyList />

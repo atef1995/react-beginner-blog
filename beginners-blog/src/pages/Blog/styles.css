@@ -5,6 +5,7 @@ body {
     rgba(255, 255, 255, 1) 0%,
     rgba(80, 233, 255, 1) 100%
   );
+  padding-bottom: 250px; /* Add space for the subscription bar */
 }
 
 .cover-img {

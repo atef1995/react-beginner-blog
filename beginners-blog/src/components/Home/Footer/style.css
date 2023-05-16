@@ -1,0 +1,41 @@
+hr {
+  color: black;
+  background-color: black;
+  border-color: black;
+  height: 1px;
+}
+
+.email-subscription {
+  position: relative;
+  padding-top: 40px;
+}
+
+.email-subscription form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.email-subscription input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.email-subscription button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-subscription button:hover {
+  background-color: #555;
+}
