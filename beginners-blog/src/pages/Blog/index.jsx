@@ -49,13 +49,48 @@ const Blog = () => {
               {blog.images.map((image, index) => (
                 <div key={index}>
                   <img className="article-img" src={image.src} alt={index} />
-                  <p>{image.caption}</p>
+                  <p>
+                    <b>
+                      <h6>{image.caption}</h6>
+                    </b>
+                  </p>
                   <br></br>
+
                   <p>{image.description}</p>
+
+                  <div className="code-div">
+                    {image.code !== "" ? (
+                      <pre className="code">
+                        <code>{image.code}</code>
+                      </pre>
+                    ) : null}
+                  </div>
                 </div>
               ))}
             </div>
           )}
+
+          {Array.isArray(blog.codeSnippet) && (
+            <div>
+              {blog.codeSnippet.map((snippet, index) => {
+                if (snippet.description === "") {
+                  return null; // Skip rendering if description is empty
+                }
+
+                return (
+                  <div key={index}>
+                    <br />
+                    <pre>
+                      <code>{snippet.code}</code>
+                    </pre>
+                    <br />
+                    <p>{snippet.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
           <div className="footer">
             <Footer />
           </div>

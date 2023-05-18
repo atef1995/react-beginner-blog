@@ -5,26 +5,30 @@ body {
     rgba(255, 255, 255, 1) 0%,
     rgba(80, 233, 255, 1) 100%
   );
-  padding-bottom: 250px; /* Add space for the subscription bar */
+  padding-bottom: 150px; /* Add space for the subscription bar */
 }
 
 .cover-img {
-  padding: 7cqb;
+  max-width: 90%;
+  height: 80%;
   overflow: hidden;
 }
 
 .article-img {
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .article-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .blog-wrap {
   max-width: 700px;
   margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 .blog-goBack {
@@ -59,4 +63,20 @@ body {
 .blog-desc {
   padding: 1rem;
   margin-top: 1.5rem;
+}
+.code {
+  padding: 2%;
+  background-color: black;
+  color: white;
+}
+
+.code-div {
+  padding-top: 1%;
+}
+pre {
+  max-width: 100%;
+}
+.article-img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
