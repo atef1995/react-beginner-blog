@@ -1,6 +1,6 @@
 export const blogList = [
   {
-    id: 1,
+    id: 'Will-ChatGPT-replace-Software-Testers',
     title: 'Will ChatGPT replace Software Testers?',
     category: 'development',
     subCategory: ['Testing', 'Ai', 'ChatGPT'],
