@@ -68,6 +68,8 @@ body {
   padding: 2%;
   background-color: black;
   color: white;
+  max-width: 100%;
+  overflow: auto;
 }
 
 .code-div {
