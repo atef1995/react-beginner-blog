@@ -39,9 +39,11 @@ const Blog = () => {
           <img className="cover-img" src={blog.cover} alt="cover" />
           {/* <p className="blog-desc">{blog.description}</p> */}
           {blog.description.map((paragraph, index) => (
-            <p key={index} className="blog-desc">
-              {paragraph}
-            </p>
+            <p
+              key={index}
+              className="blog-desc"
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+            ></p>
           ))}
           <br />
           {blog.images.length > 0 && (

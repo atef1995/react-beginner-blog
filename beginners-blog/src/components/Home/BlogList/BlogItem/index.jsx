@@ -21,7 +21,11 @@ const BlogItem = ({
         <img className="blogItem-cover" src={cover} alt="cover" />
         <Chip label={category} />
         <h3>{title}</h3>
-        <p className="blogItem-desc">{description}</p>➝
+        <p
+          className="blogItem-desc"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
+        ➝
       </Link>
       <footer>
         <div className="blogItem-author">
