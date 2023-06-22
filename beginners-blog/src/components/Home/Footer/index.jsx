@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Footer = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -45,6 +48,27 @@ const Footer = () => {
           <button type="submit">Subscribe</button>
         </form>
       )}
+
+      <div className="icons-bar">
+        <div className="icons">
+          <a
+            href="https://www.linkedin.com/in/atef-moazzen/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" color="darkblue" />
+          </a>
+
+          <a
+            href="https://twitter.com/TheTesterCorner"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitter} size="2x" color="darkblue" />
+          </a>
+          <Link to="/privacypolicy">PrivacyPolicy</Link>
+        </div>
+      </div>
     </div>
   );
 };
