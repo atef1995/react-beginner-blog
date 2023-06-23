@@ -31,25 +31,23 @@ const Footer = () => {
   };
 
   return (
-    <div className="email-subscription">
-      <hr />
-      {submitted ? (
-        <div className="thank-you-message">Thank you for subscribing!</div>
-      ) : (
-        <form className="email-subscription" onSubmit={handleSubmit}>
-          <h2>Subscribe to our newsletter</h2>
-          <br />
-          <input
-            type="email"
-            name="EMAIL"
-            placeholder="Enter your email"
-            required
-          />
-          <button type="submit">Subscribe</button>
-        </form>
-      )}
+    <footer className="footer">
+      <div className="email-subscription">
+        {submitted ? (
+          <div className="thank-you-message">Thank you for subscribing!</div>
+        ) : (
+          <form className="email-subscription" onSubmit={handleSubmit}>
+            <h2>Subscribe to our newsletter</h2>
+            <input
+              type="email"
+              name="EMAIL"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        )}
 
-      <div className="icons-bar">
         <div className="icons">
           <a
             href="https://www.linkedin.com/in/atef-moazzen/"
@@ -66,10 +64,10 @@ const Footer = () => {
           >
             <FontAwesomeIcon icon={faTwitter} size="2x" color="darkblue" />
           </a>
-          <Link to="/privacypolicy">PrivacyPolicy</Link>
+          <Link to="/privacypolicy">Privacy Policy</Link>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

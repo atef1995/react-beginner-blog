@@ -3,16 +3,17 @@ import "./styles.css";
 
 const Header = () => (
   <header className="home-header">
-    <h2>The Tester Corner</h2>
-    <h1>
-      <span>“</span> Blog <span>”</span>
-    </h1>
-    <p>
-      <i>
-        Quality is never an accident;
-        <br /> it is always the result of intelligent effort.
-      </i>
-    </p>
+    <div className="animated-title">
+      <h1>The Testing Corner</h1>
+    </div>
+    <div className="rest">
+      <p>
+        <i>
+          Quality is never an accident;
+          <br /> it is always the result of intelligent effort.
+        </i>
+      </p>
+    </div>
   </header>
 );
 

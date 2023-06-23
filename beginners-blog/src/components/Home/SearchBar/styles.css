@@ -30,3 +30,18 @@
   background-color: #0f52ba;
   color: #fff;
 }
+
+@keyframes example {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+.searchBar-wrap button:hover {
+  background-color: green;
+  animation-name: example;
+  animation-duration: 1s;
+}

@@ -1,9 +1,25 @@
 .chip {
   font-size: 0.7rem;
-  background: linear-gradient(to right, #6190e8, #a7bfe8);
   color: #fff;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
   width: fit-content;
   text-transform: capitalize;
+  /* Animation: changes gradient over 10 seconds, infinitely */
+  background: linear-gradient(45deg, blue, lightblue, blue, red);
+  background-size: 200% 200%;
+  animation: gradientChange 10s infinite;
+}
+
+/* Keyframes for the gradient changing animation */
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
