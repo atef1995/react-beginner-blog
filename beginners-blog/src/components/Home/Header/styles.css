@@ -1,5 +1,10 @@
 .home-header {
-  background: linear-gradient(45deg, cyan, lightblue, rgb(169, 211, 255), cyan);
+  background: linear-gradient(
+    30deg,
+    rgba(80, 233, 255, 1),
+    rgba(255, 255, 255, 1),
+    rgba(80, 233, 255, 1)
+  );
   background-size: 200% 200%;
   animation: gradientChange 10s infinite;
   display: flex;
@@ -17,7 +22,7 @@
 }
 
 .home-header p {
-  color: #149dff;
+  color: #003f6d;
   font-weight: 500;
 }
 
