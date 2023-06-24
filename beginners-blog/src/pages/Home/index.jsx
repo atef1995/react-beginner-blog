@@ -5,6 +5,7 @@ import Header from "../../components/Home/Header";
 import SearchBar from "../../components/Home/SearchBar";
 import { blogList } from "../../config/data";
 import Footer from "../../components/Home/Footer";
+import ConsentModal from "../../components/common/Consent/ConsentModal";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(blogList);
@@ -43,7 +44,7 @@ const Home = () => {
         formSubmit={handleSearchBar}
         handleSearchKey={(e) => setSearchKey(e.target.value)}
       />
-
+      <ConsentModal />
       {/* Blog List & Empty View */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
 
