@@ -38,9 +38,11 @@ const BlogItem = ({
       </Link>
       <footer>
         <div className="blogItem-author">
-          <img src={authorAvatar} alt="avatar" />
-          <div>
-            <h6>{authorName}</h6>
+          <Link to={"/portfolio"}>
+            <img src={authorAvatar} alt="avatar" />
+          </Link>
+          <div className="date-desc">
+            <p>{authorName}</p>
             <p>{createdAt}</p>
           </div>
         </div>

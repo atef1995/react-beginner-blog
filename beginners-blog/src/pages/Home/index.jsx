@@ -47,6 +47,7 @@ const Home = () => {
       <ConsentModal />
       {/* Blog List & Empty View */}
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
+      <hr />
 
       <Footer />
     </div>

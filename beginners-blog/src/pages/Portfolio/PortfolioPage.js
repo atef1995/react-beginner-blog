@@ -5,6 +5,12 @@ import { useEffect } from 'react';
 import VanillaTilt from "vanilla-tilt";
 import ScrollReveal from 'scrollreveal';
 import { targetElements, defaultProps } from "./data/scrollRevealConfig";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
+
 
 const PortfolioPage = () => {
     useEffect(() => {
@@ -75,7 +81,42 @@ const PortfolioPage = () => {
                 </div>
             </section>
             {<Project />}
+            <section id="contact">
+                <div className="container">
+                    <h2 className="section-title">Contact</h2>
+                    <div className="contact-wrapper load-hidden">
+                        <p className="contact-wrapper__text">Have Questions? Contact me!</p>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            className="cta-btn cta-btn--resume"
+                            href="mailto:atefm6@outlook.com"
+                        >Email me</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <footer className="footer navbar-static-bottom">
+                <div className="container">
+                    <a rel="noreferrer" href="#top" className="back-to-top">
+                        <FontAwesomeIcon icon={faAngleUp} />
 
+                    </a>
+                    <div className="social-links">
+                        <Link rel="noreferrer" to="linkedin.com/in/atef-moazzen" target="_blank">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </Link>
+                        <a rel="noreferrer" href="twitter.com/thetestercorner" target="_blank">
+                            <FontAwesomeIcon icon={faTwitter} />
+                        </a>
+                        <a rel="noreferrer" href="github.com/atef1995" target="_blank">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                    </div>
+
+                    <hr />
+                </div>
+            </footer>
         </div>
     );
 };
