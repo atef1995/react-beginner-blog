@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import axios from "axios";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -31,30 +31,36 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
-      <div className="email-subscription">
+    <footer className="home-footer">
+      <div>
         {submitted ? (
           <div className="thank-you-message">Thank you for subscribing!</div>
         ) : (
-          <form className="email-subscription" onSubmit={handleSubmit}>
+          <div>
             <h2>Subscribe to our newsletter</h2>
-            <input
-              type="email"
-              name="EMAIL"
-              placeholder="Enter your email"
-              required
-            />
-            <button type="submit">Subscribe</button>
-          </form>
+            <form className="email-subscription" onSubmit={handleSubmit}>
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         )}
 
-        <div className="icons">
+        <div className="home-icons">
           <a
             href="https://www.linkedin.com/in/atef-moazzen/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" color="darkblue" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              // size="2x"
+              color="darkblue"
+            />
           </a>
 
           <a
@@ -62,9 +68,10 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTwitter} size="2x" color="darkblue" />
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
           <Link to="/privacypolicy">Privacy Policy</Link>
+          <Link to="/portfolio">About Me</Link>
         </div>
       </div>
     </footer>

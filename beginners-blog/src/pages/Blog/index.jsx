@@ -37,7 +37,6 @@ const Blog = () => {
             </div>
           </header>
           <img className="cover-img" src={blog.cover} alt="cover" />
-          {/* <p className="blog-desc">{blog.description}</p> */}
           {blog.description.map((paragraph, index) => (
             <p
               key={index}
@@ -57,9 +56,7 @@ const Blog = () => {
                     </b>
                   </p>
                   <br></br>
-
                   <p>{image.description}</p>
-
                   <div className="code-div">
                     {image.code !== "" ? (
                       <pre className="code">

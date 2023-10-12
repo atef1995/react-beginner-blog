@@ -15,6 +15,13 @@ const BlogItem = ({
     id,
   },
 }) => {
+  function stripHtmlTags(arr) {
+    return arr.map((description) => {
+      return description.replace(/<\/?[^>]+(>|$)/g, "");
+    });
+  }
+
+  const strippedDescription = stripHtmlTags(description);
   return (
     <div className="blogItem-wrap">
       <Link className="blogItem-link" to={`/blog/${id}`}>
@@ -23,9 +30,11 @@ const BlogItem = ({
         <h3>{title}</h3>
         <p
           className="blogItem-desc"
-          dangerouslySetInnerHTML={{ __html: description }}
-        ></p>
-        ➝
+          // dangerouslySetInnerHTML={{ __html: description }}
+        >
+          {strippedDescription}
+        </p>
+        {/* ➝ */}
       </Link>
       <footer>
         <div className="blogItem-author">

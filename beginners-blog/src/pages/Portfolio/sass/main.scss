@@ -1,0 +1,14 @@
+// main.scss
+@import "abstracts/helpers";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "Base/base";
+@import "Base/typography";
+@import "layout/footer";
+@import "layout/sections";
+@import "sections/about";
+@import "sections/contact";
+@import "sections/hero";
+@import "sections/projects";
+@import "components/buttons";
+@import "vendors/bootstrap";
