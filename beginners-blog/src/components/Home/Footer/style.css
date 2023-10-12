@@ -47,7 +47,7 @@
 }
 
 .email-subscription button:hover {
-  background-color: #780000;
+  background-color: blue;
 }
 
 .thank-you-message {
@@ -74,6 +74,14 @@
 
 a {
   text-decoration: none;
+}
+
+.links {
+  display: flex;
+  color: white;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {

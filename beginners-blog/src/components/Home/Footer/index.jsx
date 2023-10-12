@@ -31,7 +31,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="home-footer">
+    <footer className="footer">
       <div>
         {submitted ? (
           <div className="thank-you-message">Thank you for subscribing!</div>
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         )}
 
-        <div className="home-icons">
+        <div className="links">
           <a
             href="https://www.linkedin.com/in/atef-moazzen/"
             target="_blank"
@@ -59,7 +59,6 @@ const Footer = () => {
             <FontAwesomeIcon
               icon={faLinkedin}
               // size="2x"
-              color="darkblue"
             />
           </a>
 
@@ -70,6 +69,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
+
           <Link to="/privacypolicy">Privacy Policy</Link>
           <Link to="/portfolio">About Me</Link>
         </div>
