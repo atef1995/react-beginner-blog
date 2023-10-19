@@ -103,13 +103,13 @@ const PortfolioPage = () => {
 
                     </a>
                     <div className="social-links">
-                        <Link rel="noreferrer" to="linkedin.com/in/atef-moazzen" target="_blank">
+                        <Link rel="noreferrer" to="https://linkedin.com/in/atef-moazzen" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </Link>
-                        <a rel="noreferrer" href="twitter.com/thetestercorner" target="_blank">
+                        <a rel="noreferrer" href="https://twitter.com/thetestercorner" target="_blank">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
-                        <a rel="noreferrer" href="github.com/atef1995" target="_blank">
+                        <a rel="noreferrer" href="https://github.com/atef1995" target="_blank">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
