@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import Education from './Education';
 
 
 
