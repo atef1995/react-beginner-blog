@@ -14,5 +14,5 @@ export const ProjectsData = {
         prevlink: 'https://github.com/atef1995/expressBookReviews',
         github: 'https://github.com/atef1995/expressBookReviews',
         image: 'assets/images/7-login.png',
-    }
+    },
 }

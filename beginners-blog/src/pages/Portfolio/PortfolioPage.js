@@ -75,6 +75,18 @@ const PortfolioPage = () => {
                                     >
                                         View Resume
                                     </a>
+
+                                </span>
+                                <span className="d-flex mt-3">
+                                    <a
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        className="cta-btn cta-btn--resume"
+                                        href="assets/certificate.pdf"
+                                    >
+                                        View Certificate
+                                    </a>
+
                                 </span>
                             </div>
                         </div>
