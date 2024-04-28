@@ -1,28 +1,58 @@
+@media (prefers-color-scheme: dark) {
+  .home-header {
+    background: linear-gradient(
+      30deg,
+      rgb(24, 31, 32),
+      rgb(84, 84, 84),
+      rgb(26, 48, 51)
+    );
+    background-size: 200% 200%;
+    animation: gradientChange 10s infinite;
+  }
+
+  .home-header h1 {
+    color: white;
+  }
+
+  .home-header p {
+    color: wheat;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .home-header {
+    background: linear-gradient(
+      30deg,
+      rgba(80, 233, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(80, 233, 255, 1)
+    );
+    background-size: 200% 200%;
+    animation: gradientChange 10s infinite;
+    color: #0f52ba;
+  }
+  .home-header p {
+    color: #003f6d;
+  }
+}
+
 .home-header {
-  background: linear-gradient(
-    30deg,
-    rgba(80, 233, 255, 1),
-    rgba(255, 255, 255, 1),
-    rgba(80, 233, 255, 1)
-  );
-  background-size: 200% 200%;
-  animation: gradientChange 10s infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 1.5rem 0rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .home-header h1 {
   font-size: 3rem;
-  color: #0f52ba;
   margin-bottom: 1rem;
 }
 
 .home-header p {
-  color: #003f6d;
   font-weight: 500;
 }
 

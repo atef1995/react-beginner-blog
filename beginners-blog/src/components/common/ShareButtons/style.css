@@ -1,4 +1,11 @@
 /* ShareButtons style.css */
+
+@media (prefers-color-scheme: dark) {
+  .share-buttons button {
+    color: white;
+  }
+}
+
 .share-buttons {
   display: flex;
   background-color: transparent;
@@ -8,7 +15,6 @@
 
 .share-buttons button {
   background-color: transparent;
-  color: black;
   border: none;
   cursor: pointer;
 }

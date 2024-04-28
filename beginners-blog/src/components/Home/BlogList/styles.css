@@ -1,3 +1,19 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    scroll-behavior: smooth;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+}
+
 .blogList-wrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
