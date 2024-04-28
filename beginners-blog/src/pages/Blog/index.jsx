@@ -6,10 +6,20 @@ import EmptyList from "../../components/common/EmptyList";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Home/Footer";
+import ShareButtons from "../../components/common/ShareButtons";
 
+// i need to add a share button to share the blog on social media
 const Blog = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
+  const handleShare = () => {
+    const url = window.location.href;
+    window.open(
+      `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+      "facebook-share-dialog",
+      "width=800,height=600"
+    );
+  };
 
   useEffect(() => {
     let blog = blogList.find((blog) => blog.id === id);
@@ -25,8 +35,10 @@ const Blog = () => {
       </Link>
       {blog ? (
         <div className="blog-wrap">
+          {/* dropdown of share on different platforms */}
           <header>
             <p className="blog-date">Published {blog.createdAt}</p>
+            <ShareButtons />
             <h1>{blog.title}</h1>
             <div className="blog-subCategory">
               {blog.subCategory.map((category, i) => (
@@ -36,14 +48,16 @@ const Blog = () => {
               ))}
             </div>
           </header>
-          <img className="cover-img" src={blog.cover} alt="cover" />
-          {blog.description.map((paragraph, index) => (
-            <p
-              key={index}
-              className="blog-desc"
-              dangerouslySetInnerHTML={{ __html: paragraph }}
-            ></p>
-          ))}
+          <section className="img-section">
+            <img className="cover-img" src={blog.cover} alt="cover" />
+            {blog.description.map((paragraph, index) => (
+              <p
+                key={index}
+                className="blog-desc"
+                dangerouslySetInnerHTML={{ __html: paragraph }}
+              ></p>
+            ))}
+          </section>
           <br />
           {blog.images.length > 0 && (
             <div>
@@ -52,7 +66,7 @@ const Blog = () => {
                   <img className="article-img" src={image.src} alt={index} />
                   <p>
                     <b>
-                      <h6>{image.caption}</h6>
+                      <h6 className="img-caption">{image.caption}</h6>
                     </b>
                   </p>
                   <br></br>

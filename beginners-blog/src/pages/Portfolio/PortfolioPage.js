@@ -115,9 +115,9 @@ const PortfolioPage = () => {
 
                     </a>
                     <div className="social-links">
-                        <Link rel="noreferrer" to="https://linkedin.com/in/atef-moazzen" target="_blank">
+                        <a rel="noreferrer" href="https:/linkedin.com/in/atef-moazzen" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} />
-                        </Link>
+                        </a>
                         <a rel="noreferrer" href="https://twitter.com/thetestercorner" target="_blank">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
