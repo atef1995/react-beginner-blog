@@ -108,7 +108,7 @@ const PortfolioPage = () => {
                     </div>
                 </div>
             </section>
-            <footer className="footer navbar-static-bottom">
+            <footer className="portfolio-footer navbar-static-bottom">
                 <div className="container">
                     <a rel="noreferrer" href="#top" className="back-to-top">
                         <FontAwesomeIcon icon={faAngleUp} />

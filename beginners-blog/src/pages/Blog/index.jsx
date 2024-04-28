@@ -56,9 +56,11 @@ const Blog = () => {
                     </b>
                   </p>
                   <br></br>
-                  <p>{image.description}</p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: image.description }}
+                  ></p>
                   <div className="code-div">
-                    {image.code !== "" ? (
+                    {image.code ? (
                       <pre className="code">
                         <code>{image.code}</code>
                       </pre>
@@ -69,26 +71,26 @@ const Blog = () => {
             </div>
           )}
 
-          {Array.isArray(blog.codeSnippet) && (
+          {
             <div>
-              {blog.codeSnippet.map((snippet, index) => {
+              {blog.codeSnippet?.map((snippet, index) => {
                 if (snippet.description === "") {
                   return null; // Skip rendering if description is empty
+                } else {
+                  return (
+                    <div key={index}>
+                      <br />
+                      <pre>
+                        <code>{snippet.code}</code>
+                      </pre>
+                      <br />
+                      <p>{snippet.description}</p>
+                    </div>
+                  );
                 }
-
-                return (
-                  <div key={index}>
-                    <br />
-                    <pre>
-                      <code>{snippet.code}</code>
-                    </pre>
-                    <br />
-                    <p>{snippet.description}</p>
-                  </div>
-                );
               })}
             </div>
-          )}
+          }
 
           <div className="footer">
             <Footer />
