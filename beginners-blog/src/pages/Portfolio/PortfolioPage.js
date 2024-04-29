@@ -8,7 +8,6 @@ import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
