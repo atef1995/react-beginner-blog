@@ -54,7 +54,7 @@ const Blog = () => {
           {blog.images.length > 0 && (
             <div>
               {blog.images.map((image, index) => (
-                <div key={index}>
+                <div key={index} className="blog-desc">
                   <img className="article-img" src={image.src} alt={index} />
                   <p>
                     <b>

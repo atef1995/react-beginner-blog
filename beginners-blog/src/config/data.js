@@ -10,7 +10,7 @@ export const blogList = [
       `<h2><b>Introduction</b></h2>
       <p>JavaScript is a versatile and powerful programming language used for web development, server-side scripting, and more. One of the key concepts in JavaScript is variable scope, which determines where a variable is accessible within a program.</p>
       </br>
-      While it may be tempting to declare variables in the global scope for convenience, it can lead to several issues and potential pitfalls. In this article, we'll explore why you should avoid declaring variables in the global scope in JavaScript.</p>`,
+      <p>While it may be tempting to declare variables in the global scope for convenience, it can lead to several issues and potential pitfalls. In this article, we'll explore why you should avoid declaring variables in the global scope in JavaScript.</p>`,
       `<h2><b>What is the Global Scope?</b></h2>
       <p>The global scope in JavaScript refers to the outermost scope of a program, where variables are accessible from anywhere within the code. When a variable is declared in the global scope, it becomes a global variable, which means it can be accessed and modified by any part of the program.</p>`,
       `<h2><b>Why Avoid Global Variables?</b></h2>
@@ -36,24 +36,24 @@ export const blogList = [
     images: [
       {
         src: '/assets/images/verification.js.png',
-        description: `In this image we can see how the global variable 'emailTemplate' is being accessed by multiple functions and causing a bug in the code.`,
+        description: `<p>In this image we can see how the global variable 'emailTemplate' is being accessed by multiple functions and causing a bug in the code. </p>`,
         caption: `emailTemplate Global Variable was declared in the global scope in JavaScript with 'let' keyword`
       },
       {
         src: '/assets/images/verification2.png',
-        description: `This caused the emailTemplate.html file to be overwritten by the first function but the rest of the functions that used the same emailTemplate global variable to have the same body as the first function which is the 'sendNewUser' and the email subject was correct however the email body was not being modified correctly.
-        where you can see that the content of the email is the same in every email sent.`,
+        description: `<p>This caused the emailTemplate.html file to be overwritten by the first function but the rest of the functions that used the same emailTemplate global variable to have the same body as the first function which is the 'sendNewUser' and the email subject was correct however the email body was not being modified correctly.
+        where you can see that the content of the email is the same in every email sent.</p>`,
         caption: `Email body was not being modified correctly by the other functions after it was sent to the customer`
       },
       {
         src: '/assets/images/verification3.png',
-        description: `After moving the variable declaration inside each function, the bug was fixed and the functions returned the correct value.`,
+        description: `<p>After moving the variable declaration inside each function, the bug was fixed and the functions returned the correct value.</p>`,
         caption: `Fixed Global Variable Bug in JavaScript by moving the variable declaration inside each function`,
       },
       {
         src: '/assets/images/verification4.png',
-        description: `The email template is now being modified correctly as you can see and the content of the email is different in each email sent.</br></br>
-        in conclusion, declaring variables in the global scope can cause bugs in your code and make it harder to maintain and debug.
+        description: `<p>The email template is now being modified correctly as you can see and the content of the email is different in each email sent.</p></br></br>
+        <p>in conclusion, declaring variables in the global scope can cause bugs in your code and make it harder to maintain and debug.</p>
         `,
         caption: `here is the email body being modified correctly after the bug was fixed`,
       }
