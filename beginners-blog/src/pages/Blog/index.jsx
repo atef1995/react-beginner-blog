@@ -12,14 +12,6 @@ import ShareButtons from "../../components/common/ShareButtons";
 const Blog = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
-  const handleShare = () => {
-    const url = window.location.href;
-    window.open(
-      `https://www.facebook.com/sharer/sharer.php?u=${url}`,
-      "facebook-share-dialog",
-      "width=800,height=600"
-    );
-  };
 
   useEffect(() => {
     let blog = blogList.find((blog) => blog.id === id);
