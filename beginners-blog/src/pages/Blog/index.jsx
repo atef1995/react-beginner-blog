@@ -43,11 +43,11 @@ const Blog = () => {
           <section className="img-section">
             <img className="cover-img" src={blog.cover} alt="cover" />
             {blog.description.map((paragraph, index) => (
-              <p
+              <div
                 key={index}
                 className="blog-desc"
                 dangerouslySetInnerHTML={{ __html: paragraph }}
-              ></p>
+              ></div>
             ))}
           </section>
           <br />
@@ -62,9 +62,9 @@ const Blog = () => {
                     </b>
                   </p>
                   <br></br>
-                  <p
+                  <div
                     dangerouslySetInnerHTML={{ __html: image.description }}
-                  ></p>
+                  ></div>
                   <div className="code-div">
                     {image.code ? (
                       <pre className="code">
