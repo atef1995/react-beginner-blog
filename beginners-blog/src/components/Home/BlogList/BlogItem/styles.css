@@ -13,6 +13,9 @@
 .blogItem-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 1rem;
 }
 .blogItem-cover {
   width: 100%;
@@ -44,8 +47,7 @@
 .blogItem-wrap footer {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .blogItem-link {
@@ -83,5 +85,13 @@
 .date-desc {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  align-items: start;
+  justify-content: start;
+}
+
+.date-desc p {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 1px;
+  margin: 3px;
 }
