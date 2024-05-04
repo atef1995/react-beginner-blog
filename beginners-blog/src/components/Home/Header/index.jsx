@@ -4,7 +4,7 @@ import "./styles.css";
 const Header = () => (
   <header className="home-header">
     <div className="animated-title">
-      <h1>The Testing Corner</h1>
+      <h1>The Tester Corner</h1>
     </div>
     <div className="rest">
       <p>
