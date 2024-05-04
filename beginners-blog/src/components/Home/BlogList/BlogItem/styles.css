@@ -13,8 +13,8 @@
 .blogItem-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 1rem;
 }
 
@@ -48,7 +48,7 @@
 .blogItem-wrap footer {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .blogItem-link {
@@ -86,8 +86,8 @@
 .date-desc {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .date-desc p {
