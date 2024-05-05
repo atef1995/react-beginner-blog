@@ -123,9 +123,8 @@ const Blog = () => {
               }
 
               <div className="blog-footer">
-                <div className="blog-tags">
-                  <p>Written by</p>
-                </div>
+                share on
+                <ShareButtons />
                 <Link to="/portfolio">
                   <div className="author">
                     <img
@@ -134,7 +133,6 @@ const Blog = () => {
                       alt="author"
                     />
                     <p>{blog.authorName}</p>
-                    <p>{blog.createdAt}</p>
                   </div>
                 </Link>
               </div>
