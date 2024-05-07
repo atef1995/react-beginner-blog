@@ -9,8 +9,8 @@ const ProjectsComponent = () => {
                 <div className="col-lg-4 col-sm-12">
                     <div className="project-wrapper__text load-hidden">
                         <h3 className="project-wrapper__text-title">{project.title}</h3>
-                        <div>
-                            <p className="mb-4">{project.description}</p>
+                        <div style={{ color: 'black' }}>
+                            <p style={{ color: 'black' }}>{project.description}</p>
                         </div>
                         <a
                             rel="noreferrer"

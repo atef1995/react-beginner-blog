@@ -41,6 +41,7 @@ const ConsentModal = () => {
         to our use of cookies.
       </p>
       <button onClick={handleConsent}>I Agree</button>
+      <button onClick={() => setShowModal(false)}>I Disagree</button>
     </div>
   ) : null;
 };

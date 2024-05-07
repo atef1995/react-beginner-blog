@@ -1,4 +1,43 @@
 export const blogList = [
+  {
+    id: 'What-course-platforms-are-the-best-for-learning-web-development',
+    title: 'What course platforms are the best for learning web development? here is my take on it!',
+    category: ['learning'],
+    boldWords: ['web development', 'course platforms'],
+    subCategory: ['Web Development'],
+    description: [
+      `<h2>Introduction</h2>
+      <p>Learning web development can be a rewarding journey, whether you're looking to start a new career, enhance your skills, or build your own projects. With the abundance of online course platforms available today, choosing the right one can be overwhelming.</p>`,
+      `<p> In this article, we'll explore some of the best course platforms for learning web development and in the end of this article i will tell you which one i liked the most to help you make an informed decision.</p>`,
+      `<h2>1. Udemy</h2>
+      <p>Udemy is one of the most popular online learning platforms, offering a wide range of web development courses for beginners, intermediate learners, and advanced developers. With courses on HTML, CSS, JavaScript, React, Node.js, and more, Udemy provides a diverse selection of topics to choose from. The platform is known for its affordability, lifetime access to courses, and frequent discounts.</p>`,
+      `<h2>2. Coursera</h2>
+      <p>Coursera is another top choice for web development courses, offering programs from universities and institutions worldwide. Coursera's courses cover a variety of topics, including front-end development, full-stack development, and web design. Learners can earn certificates and even degrees in web development through Coursera's partnerships with universities.</p>
+      <p> What i like about <b>Coursera</b> is that they provide certificates from big companies like <b>IBM</b> and <b>Meta</b> which would make your portfolio look more attractive for the employer.</p>`,
+      `<h2>3. YouTube</h2>
+      <p> YouTube is a valuable resource for learning web development, with a plethora of free tutorials, coding channels, and web development series. From beginner-friendly tutorials to in-depth coding projects, YouTube offers a wealth of content for developers of all levels. Some popular channels for web development include Traversy Media, The Net Ninja, and freeCodeCamp.</p>`,
+      `<h2>4. Pluralsight</h2>
+      <p>Pluralsight is a tech-focused learning platform that offers web development courses, tutorials, and assessments. With courses on front-end frameworks, back-end technologies, and web development tools, Pluralsight caters to developers of all skill levels. The platform also provides skill assessments and learning paths to help learners track their progress and set goals.</p>`,
+      `<h2>5. Codecademy</h2>
+      <p>Codecademy is an interactive platform that offers coding courses in web development, programming, and data science. With hands-on exercises, quizzes, and projects, Code Academy helps learners build practical skills in HTML, CSS, JavaScript, and more. The platform also offers a free plan with limited access to courses and a premium plan for full access to content.</p>`,
+      `<h2>My take</h2>
+      <p>what really helped me the most in my experience at the very start of my learning journey was the course <a href="https://www.udemy.com/course/javascript-beginners-complete-tutorial/">Modern React with Redux</a></p> `,
+      `<p>which is a React + Redux state management course by Stephen Grider, it was very detailed and easy to follow and i was able to follow along with his excercises and build the projects he built in the course which helped me understand the concepts better and apply them in real world projects.</p>`,
+      `<p>However, it was not enough for me to fully understand the concepts, i had to do a lot of googling and reading the documentation of the technologies i was learning to fully understand them and apply them in my projects.</p>`,
+      `<p>I enrolled in <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer">IBM Full Stack Software Developer Professional Certificate</a></b> but have not finished it yet, it is a very broad course and covers a lot of frameworks (flask, react, nodejs) in a broad manner, just enough for you to understand the basics and i would recommend it to anyone who is looking to learn web development.
+      but for the price of <b>$50/month</b> it might be a bit expensive.</p>`,
+      `<p><b>ChatGPT</b> was a huge help for me in my learning journey, i was able to ask it questions and most of the times it would give me the answer i was looking for and it would help me with my coding issues and help me debug my code, especially in your first project it will be the most difficult one</p>`,
+      `<p>I Would say there is no one package course that fits all when it comes to learning web development, you have to try different platforms and see which one works best for you, for me it was <b>Udemy</b>, <b>Coursera</b>, <b>ChatGPT</b> but for you it might be different.</p>`,
+      `<p>I would actually advise <b>against</b> buying a course on <b>Udemy</b> that markets themselves as "the best bootcamp course for learning web development", because it is not true, most of the time they will have outdated content and you will not learn the latest technologies and frameworks that are being used in the industry.</p>`,
+    ],
+    authorName: 'Atef Moazzen',
+    authorAvatar: '/assets/images/author.jpg',
+    createdAt: 'may 7, 2023',
+    cover: '/assets/images/udemy-coursera.png',
+    images: [],
+    codeSnippet: []
+
+  },
 
   {
     id: 'Here-is-why-you-should-not-declare-variables-in-the-global-scope-in-JavaScript',
@@ -7,15 +46,15 @@ export const blogList = [
     boldWords: ['JavaScript', 'Global Scope', 'Variable Declaration'],
     subCategory: ['JavaScript'],
     description: [
-      `<h2><b>Introduction</b></h2>
-      <p>JavaScript is a versatile and powerful programming language used for web development, server-side scripting, and more. One of the key concepts in JavaScript is variable scope, which determines where a variable is accessible within a program.</p>
-      </br>
-      <p>While it may be tempting to declare variables in the global scope for convenience, it can lead to several issues and potential pitfalls. In this article, we'll explore why you should avoid declaring variables in the global scope in JavaScript.</p>`,
-      `<h2><b>What is the Global Scope?</b></h2>
-      <p>The global scope in JavaScript refers to the outermost scope of a program, where variables are accessible from anywhere within the code. When a variable is declared in the global scope, it becomes a global variable, which means it can be accessed and modified by any part of the program.</p>`,
-      `<h2><b>Why Avoid Global Variables?</b></h2>
-      <p>While global variables may seem convenient, they can introduce a range of issues that can make your code harder to maintain, debug, and scale. Here are some reasons why you should avoid declaring variables in the global scope:</p>`,
-      `<ul>
+      `< h2 > <b>Introduction</b></h2 >
+  <p>JavaScript is a versatile and powerful programming language used for web development, server-side scripting, and more. One of the key concepts in JavaScript is variable scope, which determines where a variable is accessible within a program.</p>
+      </br >
+  <p>While it may be tempting to declare variables in the global scope for convenience, it can lead to several issues and potential pitfalls. In this article, we'll explore why you should avoid declaring variables in the global scope in JavaScript.</p>`,
+      `< h2 > <b>What is the Global Scope?</b></h2 >
+  <p>The global scope in JavaScript refers to the outermost scope of a program, where variables are accessible from anywhere within the code. When a variable is declared in the global scope, it becomes a global variable, which means it can be accessed and modified by any part of the program.</p>`,
+      `< h2 > <b>Why Avoid Global Variables?</b></h2 >
+  <p>While global variables may seem convenient, they can introduce a range of issues that can make your code harder to maintain, debug, and scale. Here are some reasons why you should avoid declaring variables in the global scope:</p>`,
+      `< ul >
       <li><b>Namespace Pollution</b></li>
       <p>Global variables can lead to namespace pollution, where variable names clash or conflict with each other. This can result in unexpected behavior, bugs, or errors in your code.</p>
       <li><b>Security Risks</b></li>
@@ -24,11 +63,11 @@ export const blogList = [
       <p>Code that relies heavily on global variables can be harder to maintain and debug. It becomes challenging to track the flow of data and dependencies, leading to code that is less modular, reusable, and scalable.</p>
       <li><b>Performance Issues</b></li>
       <p>Accessing global variables can impact the performance of your application, especially in large codebases. Global variables require additional lookups, which can slow down the execution of your code and affect the overall performance.</p>
-      </ul>`,
-      `<h2><b>A real world example</b></h2>
+      </ul > `,
+      `< h2 > <b>A real world example</b></h2 >
       <p>Here is a real world example of how a global variable can be a huge bug in JavaScript</p>
-      <p> in my recent project i had a bug where the global variable that reads a html file (email template) and each function can modify the email body and send an email with the same header and footer to make the email more reusable.</br></br>As it was being accessed by multiple functions it was causing the functions to not be able to modify the email body because the first function already modified the variable.</p>
-      `],
+      <p> in my recent project i had a bug where the global variable that reads a html file (email template) and each function can modify the email body and send an email with the same header and footer to make the email more reusable.</br></br > As it was being accessed by multiple functions it was causing the functions to not be able to modify the email body because the first function already modified the variable.</p >
+  `],
     authorName: 'Atef Moazzen',
     authorAvatar: '/assets/images/author.jpg',
     createdAt: 'April 28, 2024',
@@ -36,25 +75,25 @@ export const blogList = [
     images: [
       {
         src: '/assets/images/verification.js.png',
-        description: `<p>In this image we can see how the global variable 'emailTemplate' is being accessed by multiple functions and causing a bug in the code. </p>`,
+        description: `< p > In this image we can see how the global variable 'emailTemplate' is being accessed by multiple functions and causing a bug in the code. </p > `,
         caption: `emailTemplate Global Variable was declared in the global scope in JavaScript with 'let' keyword`
       },
       {
         src: '/assets/images/verification2.png',
-        description: `<p>This caused the emailTemplate.html file to be overwritten by the first function but the rest of the functions that used the same emailTemplate global variable to have the same body as the first function which is the 'sendNewUser' and the email subject was correct however the email body was not being modified correctly.
-        where you can see that the content of the email is the same in every email sent.</p>`,
+        description: `< p > This caused the emailTemplate.html file to be overwritten by the first function but the rest of the functions that used the same emailTemplate global variable to have the same body as the first function which is the 'sendNewUser' and the email subject was correct however the email body was not being modified correctly.
+        where you can see that the content of the email is the same in every email sent.</p > `,
         caption: `Email body was not being modified correctly by the other functions after it was sent to the customer`
       },
       {
         src: '/assets/images/verification3.png',
-        description: `<p>After moving the variable declaration inside each function, the bug was fixed and the functions returned the correct value.</p>`,
+        description: `< p > After moving the variable declaration inside each function, the bug was fixed and the functions returned the correct value.</p > `,
         caption: `Fixed Global Variable Bug in JavaScript by moving the variable declaration inside each function`,
       },
       {
         src: '/assets/images/verification4.png',
-        description: `<p>The email template is now being modified correctly as you can see and the content of the email is different in each email sent.</p></br></br>
-        <p>in conclusion, declaring variables in the global scope can cause bugs in your code and make it harder to maintain and debug.</p>
-        `,
+        description: `< p > The email template is now being modified correctly as you can see and the content of the email is different in each email sent.</p ></br ></br >
+  <p>in conclusion, declaring variables in the global scope can cause bugs in your code and make it harder to maintain and debug.</p>
+`,
         caption: `here is the email body being modified correctly after the bug was fixed`,
       }
     ],
@@ -83,19 +122,19 @@ export const blogList = [
       {
         src: '/assets/images/Capture.png',
         description: `At first i had some difficulties in running the jest test in my environment, asked chat gpt to solve the issue
-        for me with no luck, jest was not able to run the import axios code from the file, after googling a found the solution which was
-        to edit the code in my jest.config.js and add the code below. after that everything went as expected the tests ran successfully!`,
-        caption: `I asked ChatGpt to test my Footer.jsx component using jest and it gave me the code above.        
-      `,
+for me with no luck, jest was not able to run the import axios code from the file, after googling a found the solution which was
+        to edit the code in my jest.config.js and add the code below.after that everything went as expected the tests ran successfully!`,
+        caption: `I asked ChatGpt to test my Footer.jsx component using jest and it gave me the code above.
+`,
         code: `moduleNameMapper: {
-            "axios": "axios/dist/node/axios.cjs"
-          }`
+  "axios": "axios/dist/node/axios.cjs"
+} `
       },
       {
         src: '/assets/images/passed tests.png',
         description: `to sum everything up ChatGPT can help us testers massively and make our jobs easier, most of us already spend 
         so much time googling stuff so to have someone to help you with your exact issue is awesome, of course in more complex tests it would not be able to do it for you.
-        we'll see how things will pan out in the future, for now lets focus on using ChatGPT to our advantage.`,
+  we'll see how things will pan out in the future, for now lets focus on using ChatGPT to our advantage.`,
         caption: '',
         code: ''
       }
