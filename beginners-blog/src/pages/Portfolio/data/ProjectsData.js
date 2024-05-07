@@ -1,4 +1,12 @@
 export const ProjectsData = {
+    0: {
+        title: 'Next.js E-Commerce Store with Stripe Payments and redux-toolkit (in progress)',
+        description: `This is a full-stack e-commerce store built with Next.js, Redux Toolkit, and Stripe. The application features a Buy now button, product pages, and a checkout process with payment processing via Stripe. It's built with a focus on frontend functionality, demonstrating proficiency in React, Redux, and Next.js. The application is fully responsive and features a clean, modern design.`,
+        prevlink: 'https://superb-tarsier-40b1af.netlify.app/',
+        github: '#',
+        image: 'assets/images/nextjs-ecommerce.jpg',
+    },
+
     1: {
         title: 'PDF to GPT Chat Application with Authentication',
         description: `This is a full-stack application that allows users to chat with OpenAI's GPT models. Users can register, login, and then interact with the model via a simple interface. The application uses a React frontend, a Python FastAPI backend, and relies on OpenAI's GPT API for the chat functionality.`,
