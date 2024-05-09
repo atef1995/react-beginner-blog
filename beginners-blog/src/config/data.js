@@ -33,7 +33,7 @@ export const blogList = [
     ],
     authorName: 'Atef Moazzen',
     authorAvatar: '/assets/images/author.jpg',
-    createdAt: 'may 7, 2023',
+    createdAt: 'may 7, 2024',
     cover: '/assets/images/udemy-coursera.png',
     images: [],
     codeSnippet: []
