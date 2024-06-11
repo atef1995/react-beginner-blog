@@ -2,9 +2,9 @@ export const ProjectsData = {
     0: {
         title: 'Next.js E-Commerce Store with Stripe Payments and redux-toolkit (in progress)',
         description: `This is a full-stack e-commerce store built with Next.js, Redux Toolkit, and Stripe. The application features a Buy now button, product pages, and a checkout process with payment processing via Stripe. It's built with a focus on frontend functionality, demonstrating proficiency in React, Redux, and Next.js. The application is fully responsive and features a clean, modern design.`,
-        prevlink: 'https://superb-tarsier-40b1af.netlify.app/',
+        prevlink: 'https://www.visionai.lol',
         github: '#',
-        image: 'assets/images/nextjs-ecommerce.jpg',
+        image: 'assets/images/visionai website.jpeg',
     },
 
     1: {
