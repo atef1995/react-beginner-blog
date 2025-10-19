@@ -1,6 +1,5 @@
 import React from 'react';
 import './sass/main.scss'
-import Project from './Projects';
 import { useEffect } from 'react';
 import VanillaTilt from "vanilla-tilt";
 import ScrollReveal from 'scrollreveal';
@@ -41,7 +40,6 @@ const PortfolioPage = () => {
           </p>
         </div>
       </section>
-      {<Project />}
       <section id="contact">
         <div className="container">
           <h2 className="section-title">Contact</h2>
